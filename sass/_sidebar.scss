@@ -2,6 +2,12 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
   display: flex;
   justify-content: center;
 }
@@ -50,13 +56,19 @@
     position: fixed;
     z-index: 1000;
     top: 1.1rem;
-    left: .6rem;
+    left: .7rem;
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
     background-image: radial-gradient($color-primary, $color-primary-dark);
     transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: scale(1);
+
+    @media only screen and (max-width: $bp-large) {
+      position: absolute;
+      top: 1.1rem;
+      left: .7rem;
+    }
   }
 
   &__button {
@@ -71,6 +83,12 @@
     text-align: center;
     cursor: pointer;
     z-index: 1050;
+
+    @media only screen and (max-width: $bp-large) {
+      position: absolute;
+      top: 1rem;
+      left: .5rem;
+    }
   }
 
   &__nav {
@@ -86,6 +104,7 @@
   }
 
   &__list {
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -117,7 +136,7 @@
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-      background-size: 220%;
+      background-size: 280%;
       transition: all 0.4s;
     }
 

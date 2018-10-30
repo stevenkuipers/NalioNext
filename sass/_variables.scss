@@ -16,3 +16,11 @@ $font-display: 'Josefin Sans', sans-serif;
 
 $shadow-extra-light: 0 2rem 5rem rgba(#000, .1);
 $shadow-light: 0 2rem 5rem rgba(#000, .2);
+
+
+// Font size responsive breakpoints
+
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px

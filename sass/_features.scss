@@ -6,6 +6,14 @@
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   align-items: start;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 8rem 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 6rem 0;
+  }
 }
 
 .feature {
